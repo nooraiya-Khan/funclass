@@ -12,46 +12,46 @@ class _OnesessiononeState extends State<Onesessionone> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Color.fromARGB(152, 131, 46, 184)),
-        title: Center(
-          child: Container(
-            margin: const EdgeInsets.only(right: 25),
-            child: Column(children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    //margin: const EdgeInsets.only(left: 130),
-                    child: const Text(
-                      "Fun",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Color.fromARGB(255, 198, 200, 50),
-                          fontWeight: FontWeight.bold),
+       appBar: AppBar(
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Color.fromARGB(152, 131, 46, 184)),
+          title: Center(
+            child: Container(
+              margin: const EdgeInsets.only(right: 25),
+              child: Column(children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      //margin: const EdgeInsets.only(left: 130),
+                      child: const Text(
+                        "Fun",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Color.fromARGB(255, 198, 200, 50),
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
-                  ),
-                  Container(
-                    child: const Text(
-                      "Class",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Color.fromARGB(152, 131, 46, 184),
-                          fontWeight: FontWeight.bold),
+                    Container(
+                      child: const Text(
+                        "Class",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Color.fromARGB(152, 131, 46, 184),
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
-                  ),
-                ],
-              ),
-              Container(
-                height: 3,
-                width: 80,
-                decoration: BoxDecoration(color: Colors.amber[100]),
-              )
-            ]),
+                  ],
+                ),
+                Container(
+                  height: 3,
+                  width: 80,
+                  decoration: BoxDecoration(color: Colors.amber[100]),
+                )
+              ]),
+            ),
           ),
         ),
-      ),
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Center(
@@ -62,7 +62,11 @@ class _OnesessiononeState extends State<Onesessionone> {
               ),
 
               Container(
+                padding: EdgeInsets.all(7),
                 margin: EdgeInsets.only(left: 10, right: 10),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                        width: 2, color: Color.fromARGB(152, 131, 46, 184))),
                 child: Text(
                   "Session 1 : Intellectual property for personal and commercial use.",
                   textAlign: TextAlign.center,
@@ -224,6 +228,8 @@ class _OnesessiononeState extends State<Onesessionone> {
                       fontWeight: FontWeight.w300),
                 ),
               ),
+              SizedBox(height: 10,),
+              Text("Send it to me on whatsapp!",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
               SizedBox(
                 height: 10,
               ),
