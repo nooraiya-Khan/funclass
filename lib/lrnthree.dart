@@ -233,7 +233,7 @@ class _LrnthreeState extends State<Lrnthree> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => threesessionfour()));
+                        builder: (context) => threesessiothree()));
               },
               child: Container(
                 height: 50,
@@ -271,7 +271,7 @@ class _LrnthreeState extends State<Lrnthree> {
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => threesessiontwo()));
+                    MaterialPageRoute(builder: (context) => threesessionfour()));
               },
               child: Container(
                 height: 50,

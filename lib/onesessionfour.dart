@@ -257,60 +257,38 @@ class _OnesessiofourState extends State<Onesessiofour> {
                   ],
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Onesessionfive()));
-                },
-                child: Container(
-                  height: 50,
-                  margin: const EdgeInsets.only(top: 50, left: 20, right: 20),
-                  padding: EdgeInsets.only(left: 30),
-                  decoration: const BoxDecoration(
-                    color: Color.fromARGB(152, 131, 46, 184),
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                  ),
-                  child: Center(
-                    child: Row(
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              "Go to session five ",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w300),
-                            ),
-                            SizedBox(
-                              width: 100,
-                            ),
-                            Container(
-                              child: Icon(
-                                Icons.double_arrow_sharp,
-                                color: Colors.white,
-                              ),
-                            )
-                          ],
-                        ),
-                        // SizedBox(
-                        //   width: 30,
-                        // ),
-                        // Icon(
-                        //   Icons.arrow_drop_down_outlined,
-                        //   color: Colors.white,
-                        //   size: 40,
-                        // )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+              
                 SizedBox(height: 30,)
           ],
           
         ),
         
+      ),
+       bottomNavigationBar: GestureDetector(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Onesessionfive()));
+        },
+        child: Container(
+          height: 53,
+          color: Color.fromARGB(152, 131, 46, 184),
+          child: Row(
+            children: [
+              Padding(padding: EdgeInsets.only(left: 90)),
+              Text(
+                "Go to session  :  5  ",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w300),
+              ),
+              Icon(
+                Icons.double_arrow_sharp,
+                color: Colors.white,
+              )
+            ],
+          ),
+        ),
       ),
 
     );

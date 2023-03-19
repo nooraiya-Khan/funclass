@@ -1,6 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:demo/camera.dart';
+import 'package:demo/lrnthree.dart';
 import 'package:demo/pt3.dart';
+import 'package:demo/threesessionone.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -236,12 +238,38 @@ class _OnesessionfiveState extends State<Onesessionfive> {
                                   }
                                   
                                 }
-                              , child: const Text("Send",style: TextStyle(color: Colors.white),))
-                              
-                              
-                              
-                              ),
+                              , child: const Text("Send",style: TextStyle(color: Colors.white),))  ),
                              
-                              SizedBox(height: 30,)]))]))])));
+                              SizedBox(height: 30,)]))]))]
+                              
+                              )),
+                               bottomNavigationBar: GestureDetector(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Lrnthree()));
+        },
+        child: Container(
+          height: 53,
+          color: Color.fromARGB(152, 131, 46, 184),
+          child: Row(
+            children: [
+              Padding(padding: EdgeInsets.only(left: 50)),
+              Text(
+                "Go to Learning Experience:3  ",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w300),
+              ),
+              Icon(
+                Icons.double_arrow_sharp,
+                color: Colors.white,
+              )
+            ],
+          ),
+        ),
+      ),
+                              
+                              );
   }
 }
