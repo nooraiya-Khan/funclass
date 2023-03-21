@@ -13,6 +13,9 @@ class Lrntwo extends StatefulWidget {
 }
 
 class _LrntwoState extends State<Lrntwo> {
+  
+  Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,64 +59,26 @@ class _LrntwoState extends State<Lrntwo> {
           ),
         ),
       ),
-      // drawer: Drawer(
-      //   child: SafeArea(
-      //     child: SingleChildScrollView(
-      //         physics: BouncingScrollPhysics(),
-      //         child: Container(
-      //           margin: EdgeInsets.only(left: 10, top: 15),
-      //           child: Column(
-      //             children: [
-      //               Text(
-      //                 "Hello Students!Select a session from here and start experiencing some learning.",
-      //                 style: TextStyle(
-      //                   fontSize: 16,
-      //                   color: Color.fromARGB(255, 198, 200, 50),
-      //                 ),
-      //               ),
-      //               SizedBox(
-      //                 height: 20,
-      //               ),
-      //               Divider(),
-      //               Container(
-      //                 child: Text(
-      //                   "Session : 1",
-      //                   style: TextStyle(
-      //                       color: Color.fromARGB(152, 131, 46, 184),
-      //                       fontSize: 30,
-      //                       fontWeight: FontWeight.w300),
-      //                 ),
-      //               )
-      //             ],
-      //           ),
-      //         )),
-      //   ),
-      // ),
-
-      body: Center(
+      body: TweenAnimationBuilder(
+         tween: _scaleTween,
+      duration: Duration(milliseconds: 600),
+      builder: (context, scale, child) {
+        return Transform.scale(
+          scale: scale,
+          child: child,);},
         child: Column(
           children: [
-            // Container(
-            //   margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-            //   child: Text(
-            //     "Hello dear students!Welcome to the world of experiencing learning.",
-            //     style: TextStyle(
-            //       color: Color.fromARGB(151, 35, 35, 35),
-            //       fontSize: 16,
-            //       fontWeight: FontWeight.w400,
-            //     ),
-            //   ),
-            // ),
             SizedBox(
               height: 10,
             ),
             Container(
-              margin: const EdgeInsets.only(top: 50, left: 10, right: 10),
+              margin: const EdgeInsets.only(top: 50, left: 0, right: 0),
               child: const Text(
                 "Learning Experience 2",
                 style: TextStyle(
                   color: Color.fromARGB(152, 131, 46, 184),
-                  fontSize: 22,                 fontWeight: FontWeight.w700,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
             ),
@@ -126,19 +91,19 @@ class _LrntwoState extends State<Lrntwo> {
                 "Use of Intellectual property.",
                 style: TextStyle(
                   color: Color.fromARGB(147, 0, 0, 0),
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
             ),
-
             SizedBox(
               height: 5,
             ),
             Container(
               child: Text(
                 "Select a session and start learning from the experience.",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(color: Colors.grey,fontStyle: FontStyle.italic),
+                
               ),
             ),
             GestureDetector(
@@ -163,7 +128,7 @@ class _LrntwoState extends State<Lrntwo> {
                             "Session 1 ",
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 22,
+                                fontSize: 20,
                                 fontWeight: FontWeight.w300),
                           ),
                           SizedBox(
@@ -173,6 +138,7 @@ class _LrntwoState extends State<Lrntwo> {
                             child: Icon(
                               Icons.double_arrow_sharp,
                               color: Colors.white,
+                              size: 20,
                             ),
                           )
                         ],
@@ -209,7 +175,7 @@ class _LrntwoState extends State<Lrntwo> {
                       "Session 2",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontWeight: FontWeight.w300,
                       ),
                     ),
@@ -220,6 +186,7 @@ class _LrntwoState extends State<Lrntwo> {
                       child: Icon(
                         Icons.double_arrow_sharp,
                         color: Colors.white,
+                        size: 20,
                       ),
                     )
                   ],
@@ -246,7 +213,7 @@ class _LrntwoState extends State<Lrntwo> {
                         "Session 3",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w300),
                       ),
                       SizedBox(
@@ -256,6 +223,7 @@ class _LrntwoState extends State<Lrntwo> {
                         child: Icon(
                           Icons.double_arrow_sharp,
                           color: Colors.white,
+                          size: 20,
                         ),
                       )
                     ],
@@ -263,7 +231,6 @@ class _LrntwoState extends State<Lrntwo> {
                 ),
               ),
             ),
-
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
@@ -284,7 +251,7 @@ class _LrntwoState extends State<Lrntwo> {
                         "Session 4",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w300),
                       ),
                       SizedBox(
@@ -294,6 +261,7 @@ class _LrntwoState extends State<Lrntwo> {
                         child: Icon(
                           Icons.double_arrow_sharp,
                           color: Colors.white,
+                          size: 20,
                         ),
                       )
                     ],
@@ -320,7 +288,7 @@ class _LrntwoState extends State<Lrntwo> {
                       "Session 5",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontWeight: FontWeight.w300,
                       ),
                     ),
@@ -331,6 +299,7 @@ class _LrntwoState extends State<Lrntwo> {
                       child: Icon(
                         Icons.double_arrow_sharp,
                         color: Colors.white,
+                        size: 20,
                       ),
                     )
                   ],

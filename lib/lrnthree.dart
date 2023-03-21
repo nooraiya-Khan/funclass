@@ -94,17 +94,7 @@ class _LrnthreeState extends State<Lrnthree> {
       body: Center(
         child: Column(
           children: [
-            // Container(
-            //   margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-            //   child: Text(
-            //     "Hello dear students!Welcome to the world of experiencing learning.",
-            //     style: TextStyle(
-            //       color: Color.fromARGB(151, 35, 35, 35),
-            //       fontSize: 16,
-            //       fontWeight: FontWeight.w400,
-            //     ),
-            //   ),
-            // ),
+     
             SizedBox(
               height: 10,
             ),
@@ -114,7 +104,7 @@ class _LrnthreeState extends State<Lrnthree> {
                 "Learning Experience 3",
                 style: TextStyle(
                   color: Color.fromARGB(152, 131, 46, 184),
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -128,7 +118,7 @@ class _LrnthreeState extends State<Lrnthree> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color.fromARGB(147, 0, 0, 0),
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -140,7 +130,7 @@ class _LrnthreeState extends State<Lrnthree> {
             Container(
               child: Text(
                 "Select a session and start learning from the experience.",
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(color: Colors.grey,fontStyle: FontStyle.italic),
               ),
             ),
             GestureDetector(
@@ -165,7 +155,7 @@ class _LrnthreeState extends State<Lrnthree> {
                             "Session 1 ",
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 22,
+                                fontSize: 20,
                                 fontWeight: FontWeight.w300),
                           ),
                           SizedBox(
@@ -175,6 +165,7 @@ class _LrnthreeState extends State<Lrnthree> {
                             child: Icon(
                               Icons.double_arrow_sharp,
                               color: Colors.white,
+                              size: 20,
                             ),
                           )
                         ],
@@ -211,7 +202,7 @@ class _LrnthreeState extends State<Lrnthree> {
                       "Session 2",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22,
+                        fontSize: 20,
                         fontWeight: FontWeight.w300,
                       ),
                     ),
@@ -222,6 +213,7 @@ class _LrnthreeState extends State<Lrnthree> {
                       child: Icon(
                         Icons.double_arrow_sharp,
                         color: Colors.white,
+                        size: 20,
                       ),
                     )
                   ],
@@ -250,7 +242,7 @@ class _LrnthreeState extends State<Lrnthree> {
                         "Session 3",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w300),
                       ),
                       SizedBox(
@@ -260,6 +252,7 @@ class _LrnthreeState extends State<Lrnthree> {
                         child: Icon(
                           Icons.double_arrow_sharp,
                           color: Colors.white,
+                          size: 20,
                         ),
                       )
                     ],
@@ -288,7 +281,7 @@ class _LrnthreeState extends State<Lrnthree> {
                         "Session 4",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 22,
+                            fontSize: 20,
                             fontWeight: FontWeight.w300),
                       ),
                       SizedBox(
@@ -298,6 +291,7 @@ class _LrnthreeState extends State<Lrnthree> {
                         child: Icon(
                           Icons.double_arrow_sharp,
                           color: Colors.white,
+                          size: 20,
                         ),
                       )
                     ],
