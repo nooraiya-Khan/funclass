@@ -240,7 +240,7 @@ class _OnesessiofourState extends State<Onesessiofour> {
               Container(
                   margin: EdgeInsets.only(left: 10, right: 10),
                   child: Text(
-                    "Step 1 :Write your full name and roll no on page : 43.use pencil",
+                    "Step 1 :Take an A4 paper.There is a table on page 43 of your digital technology book, now draw a table like this on an A4 paper .Don't forget to write your full name and roll no",
                     style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w300,
@@ -289,7 +289,7 @@ class _OnesessiofourState extends State<Onesessiofour> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "And session 1 ends here.",
+                      "session 4 ends here.",
                       style: TextStyle(
                           color: Color.fromARGB(152, 131, 46, 184),
                           fontSize: 18,

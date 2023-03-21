@@ -161,14 +161,7 @@ class _ThreesessiononeState extends State<Threesessionone> {
                   )
                 ],
               ),
-              Container(
-                padding: EdgeInsets.only(left: 10, right: 10),
-                child: Text(
-                  "Remember to write your full name and roll number in every task. Write your name and roll at the top of the page for book task.",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.redAccent),
-                ),
-              ),
+              
               SizedBox(
                 height: 10,
               ),
@@ -182,7 +175,7 @@ class _ThreesessiononeState extends State<Threesessionone> {
               Container(
                   padding: EdgeInsets.only(left: 10, right: 10),
                   child: Text(
-                    "Now tell me what is virtual identity in your words.",
+                    "Now tell me what is virtual identity in your words.Don't forget to write your full name and roll.",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.w300),
                   )),
@@ -276,7 +269,7 @@ class _ThreesessiononeState extends State<Threesessionone> {
                   Container(
                     padding: EdgeInsets.only(left: 10, right: 10),
                     child: Text(
-                      "Go to page:50 and fill up the table with alina's information and send it to me on whats app",
+                      "Take an A4 paper.make a table as page:50 of your Digital Technology book.Complete the table with alina's information and submit it to me on WhatsApp",
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -293,7 +286,7 @@ class _ThreesessiononeState extends State<Threesessionone> {
                   Container(
                     padding: EdgeInsets.only(left: 10, right: 10),
                     child: Text(
-                      "Go to page: 52, there is a box for known information and a box for  unknown information",
+                      "Take an A4 paper, there is a box for known information and a box for  unknown information on page : 52.now complete the box",
                       textAlign: TextAlign.center,
                     ),
                   ),

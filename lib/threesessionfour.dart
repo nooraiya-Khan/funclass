@@ -1,3 +1,4 @@
+import 'package:demo/lrn4.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -88,7 +89,7 @@ class _threesessionfourState extends State<threesessionfour> {
                 padding: EdgeInsets.all(3),
                 margin: EdgeInsets.only(left: 10, right: 10),
                 child: Text(
-                  "Session 2 : Let's create a virtual identity for myself.",
+                  "Session 4 : Let's create a virtual identity for myself.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Color.fromARGB(152, 131, 46, 184),
@@ -272,6 +273,34 @@ class _threesessionfourState extends State<threesessionfour> {
               ),
             ])),
           )),
+              bottomNavigationBar: GestureDetector(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => lrn4()));
+        },
+        child: Container(
+          margin: EdgeInsets.only(top: 30),
+          height: 53,
+          color: Color.fromARGB(152, 131, 46, 184),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(padding: EdgeInsets.only(left: 0)),
+              Text(
+                "Go Learning Experience  :  4  ",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w300),
+              ),
+              Icon(
+                Icons.double_arrow_sharp,
+                color: Colors.white,
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

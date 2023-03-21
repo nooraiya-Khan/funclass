@@ -1,4 +1,5 @@
 import 'package:demo/classsix.dart';
+import 'package:demo/lrn4.dart';
 import 'package:demo/lrnthree.dart';
 import 'package:demo/lrntwo.dart';
 import 'package:flutter/material.dart';
@@ -96,13 +97,38 @@ class _HomepageState extends State<Homepage> {
                               padding: EdgeInsets.only(top: 10, left: 10),
                               height: 50,
                               margin: const EdgeInsets.only(
-                                  top: 10, left: 10, right: 160, bottom: 20),
+                                  top: 10, left: 10, right: 160, bottom: 0),
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(152, 131, 46, 184),
                                 borderRadius: BorderRadius.all(Radius.circular(10)),
                               ),
                               child: Text(
                                 "Learning Experience 3  ",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ),
+                          ),
+                           GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => lrn4()));
+                            },
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10, left: 10),
+                              height: 50,
+                              margin: const EdgeInsets.only(
+                                  top: 10, left: 10, right: 160, bottom: 20),
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(152, 131, 46, 184),
+                                borderRadius: BorderRadius.all(Radius.circular(10)),
+                              ),
+                              child: Text(
+                                "Learning Experience 4  ",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,

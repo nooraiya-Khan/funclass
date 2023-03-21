@@ -91,7 +91,7 @@ class pttwo extends StatelessWidget {
                       ]),
                 ),
                 child: Text(
-                  "Go to page no:39 in your book and draw a trademark picture. Don't forget to write your full name and roll on page 39. Send it to me on WhatsApp.",
+                  "Draw a picture of a trademark on an A4 paper,send it to me on WhatsApp.",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
@@ -124,7 +124,7 @@ class pttwo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "And session 2 ends here.",
+                      "session 2 ends here.",
                       style: TextStyle(
                           color: Color.fromARGB(152, 131, 46, 184),
                           fontSize: 18,

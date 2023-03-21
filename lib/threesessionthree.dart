@@ -1,4 +1,5 @@
 import 'package:demo/pt3.dart';
+import 'package:demo/threesessionfour.dart';
 import 'package:flutter/material.dart';
 
 class threesessiothree extends StatefulWidget {
@@ -562,7 +563,7 @@ Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
                                             Navigator.push(
                                                 context,
                                                 MaterialPageRoute(
-                                                    builder: (context) => Pt3()));
+                                                    builder: (context) => threesessionfour()));
                                           }
                                         });
                                       },
@@ -580,6 +581,7 @@ Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
                                                   children: [
+                                                     Padding(padding: EdgeInsets.only(left: 0)),
                                                 Container(
                                                   child: Text(
                                                     "Go to session : 4",
@@ -587,9 +589,14 @@ Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
                                                         fontWeight:
                                                             FontWeight.w300,
                                                         color: Colors.white,
-                                                        fontSize: 16),
+                                                        fontSize: 20),
                                                   ),
+                                                  
                                                 ),
+                                                 Icon(
+                Icons.double_arrow_sharp,
+                color: Colors.white,
+              )
                                               ]))))
                                 ]))
                           ]))

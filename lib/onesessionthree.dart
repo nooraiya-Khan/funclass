@@ -169,7 +169,7 @@ class _OnesessionthreeState extends State<Onesessionthree> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "And session 3 ends here.",
+                      "session 3 ends here.",
                       style: TextStyle(
                           color: Color.fromARGB(152, 131, 46, 184),
                           fontSize: 18,

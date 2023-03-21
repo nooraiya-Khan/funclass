@@ -102,6 +102,7 @@ class _OnesessiononeState extends State<Onesessionone> {
                 margin: EdgeInsets.only(left: 10, right: 10),
                 child: Text(
                   "Intellectual property is something that you create using your mind - for example, a story, an invention, an artistic work or a symbol.",
+                  
                   style: TextStyle(
                       color: Color.fromARGB(255, 158, 158, 158),
                       fontSize: 18,
@@ -214,52 +215,22 @@ class _OnesessiononeState extends State<Onesessionone> {
                   )
                 ],
               ),
+             
               SizedBox(
                 height: 10,
               ),
               Container(
                 margin: EdgeInsets.only(left: 10),
                 child: Text(
-                  "1.Write your full name and roll number above the box.",
+                  "Go to page 33 of your Digital Technology Book,Make some decision and write it on an A4 paper.Don't forget to write your full name and roll.send it to me on WhatsApp",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
+                      color: Colors.grey,
+                     // fontSize: 18,
                       fontWeight: FontWeight.w300),
                 ),
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Text(
-                  "2.Go to page 33 of your Digital Technology Book",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w300),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Text(
-                  "2. Let's make some decisions. Write the decision in the box(use Pencil). ",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w300),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                "Send it to me on whatsapp!",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
+             
+             
               SizedBox(
                 height: 10,
               ),
@@ -269,7 +240,7 @@ class _OnesessiononeState extends State<Onesessionone> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "And session 1 ends here.",
+                      "session 1 ends here.",
                       style: TextStyle(
                           color: Color.fromARGB(152, 131, 46, 184),
                           fontSize: 18,

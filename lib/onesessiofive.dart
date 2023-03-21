@@ -264,7 +264,7 @@ class _OnesessionfiveState extends State<Onesessionfive> {
             children: [
               Padding(padding: EdgeInsets.only(left: 50)),
               Text(
-                "Go to Learning Experience:3  ",
+                "Go to Learning Experience : 3  ",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
