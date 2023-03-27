@@ -18,126 +18,142 @@ class _HomepageState extends State<Homepage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        body: TweenAnimationBuilder(
-             tween: _scaleTween,
-      duration: Duration(milliseconds: 600),
-      builder: (context, scale, child) {
-        return Transform.scale(
-          scale: scale,
-          child: child,);},
-          child: Container(
-            child: Card(
-              elevation: 1,
+        body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
+          child: TweenAnimationBuilder(
+               tween: _scaleTween,
+              duration: Duration(milliseconds: 600),
+              builder: (context, scale, child) {
+          return Transform.scale(
+            scale: scale,
+            child: child,);},
+            child: Container(
               child: Column(
+              //  mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
                     height: 300,
                   ),
                   Container(
-                    child: Center(
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(
-                                left: 10, right: 220, top: 30, bottom: 5),
-                            child: Text(
-                              "Class Seven",
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(152, 131, 46, 184),
-                                  fontSize: 25),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(right: 230),
-                            child: Text(
-                              "Nooraiya Khan",
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 18),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 25,
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => Lrntwo()));
-                            },
-                            child: Container(
-                              padding: EdgeInsets.only(top: 10, left: 10),
-                              height: 50,
-                              margin: const EdgeInsets.only(
-                                  top: 10, left: 10, right: 160),
-                              decoration: const BoxDecoration(
+                    margin: EdgeInsets.only(left: 20,),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                        //  padding: EdgeInsets.only(
+                             // left: 10, right: 220, top: 30, bottom: 5),
+                          child: Text(
+                            "Class Seven",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
                                 color: Color.fromARGB(152, 131, 46, 184),
-                                borderRadius: BorderRadius.all(Radius.circular(10)),
-                              ),
+                                fontSize: 25),
+                          ),
+                        ),
+                        Container(
+                          //padding: EdgeInsets.only(right: 210),
+                          child: Text(
+                            "Nooraiya Khan",
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w300,
+                                fontSize: 18),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 25,
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Lrntwo()));
+                          },
+                          child: Container(
+                            //padding: EdgeInsets.only(top: 10, left: 10,right: 10,
+                            //bottom: 10),
+                            height: 40,
+                            width: 170,
+                           //
+                           //
+                            //width: 400,
+                          //  margin: const EdgeInsets.only(
+                                //top: 10, left: 10, right: 160,bottom: 10),
+                            decoration: const BoxDecoration(
+                              color: Color.fromARGB(152, 131, 46, 184),
+                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                            ),
+                            child: Center(
                               child: Text(
                                 "Learning Experience 2  ",
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 18,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.w300),
                               ),
                             ),
                           ),
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => Lrnthree()));
-                            },
-                            child: Container(
-                              padding: EdgeInsets.only(top: 10, left: 10),
-                              height: 50,
-                              margin: const EdgeInsets.only(
-                                  top: 10, left: 10, right: 160, bottom: 0),
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(152, 131, 46, 184),
-                                borderRadius: BorderRadius.all(Radius.circular(10)),
-                              ),
+                        ),
+                        SizedBox(height: 10,),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Lrnthree()));
+                          },
+                          child: Container(
+                           // padding: EdgeInsets.only(top: 10, left: 10,bottom: 10,right: 10,),
+                             height: 40,
+                            width: 170,
+                           // margin: const EdgeInsets.only(
+                                //top: 10, left: 10, right: 160, bottom: 0),
+                            decoration: const BoxDecoration(
+                              color: Color.fromARGB(152, 131, 46, 184),
+                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                            ),
+                            child: Center(
                               child: Text(
                                 "Learning Experience 3  ",
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 18,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.w300),
                               ),
                             ),
                           ),
-                           GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => lrn4()));
-                            },
-                            child: Container(
-                              padding: EdgeInsets.only(top: 10, left: 10),
-                              height: 50,
-                              margin: const EdgeInsets.only(
-                                  top: 10, left: 10, right: 160, bottom: 20),
-                              decoration: const BoxDecoration(
-                                color: Color.fromARGB(152, 131, 46, 184),
-                                borderRadius: BorderRadius.all(Radius.circular(10)),
-                              ),
+                        ),
+                        SizedBox(height: 10,),
+                         GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => lrn4()));
+                          },
+                          child: Container(
+                           // padding: EdgeInsets.only(top: 10, left: 10,bottom: 10,right: 10),
+                            height: 40,
+                            width: 170,
+                          //  margin: const EdgeInsets.only(
+                                //top: 10, left: 10, right: 160, bottom: 20),
+                            decoration: const BoxDecoration(
+                              color: Color.fromARGB(152, 131, 46, 184),
+                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                            ),
+                            child: Center(
                               child: Text(
                                 "Learning Experience 4  ",
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 18,
+                                    fontSize: 15,
                                     fontWeight: FontWeight.w300),
                               ),
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ],
