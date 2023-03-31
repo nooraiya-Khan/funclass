@@ -1,18 +1,17 @@
-import 'package:demo/foursessionsix.dart';
+import 'package:demo/four_session_five.dart';
 import 'package:flutter/material.dart';
-class Foursessionfive extends StatefulWidget {
-  const Foursessionfive({super.key});
+class Foursessionfour extends StatefulWidget {
+  const Foursessionfour({super.key});
 
   @override
-  State<Foursessionfive> createState() => _FoursessionfiveState();
+  State<Foursessionfour> createState() => _FoursessionfourState();
 }
 
-class _FoursessionfiveState extends State<Foursessionfive> {
-  Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
+class _FoursessionfourState extends State<Foursessionfour> {
+    Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Scaffold(  appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Color.fromARGB(152, 131, 46, 184)),
         title: Center(
@@ -57,6 +56,8 @@ class _FoursessionfiveState extends State<Foursessionfive> {
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: TweenAnimationBuilder(
+
+
           tween: _scaleTween,
           duration: Duration(milliseconds: 600),
           builder: (context, scale, child) {
@@ -65,7 +66,10 @@ class _FoursessionfiveState extends State<Foursessionfive> {
               child: child,
             );
           },child: Container(
-            child: Column(children: [
+            margin: EdgeInsets.only(left: 0,right: 0),
+            child: Column(
+             
+              children: [
                 SizedBox(
                   height: 10,
                 ),
@@ -74,7 +78,7 @@ class _FoursessionfiveState extends State<Foursessionfive> {
                   margin: EdgeInsets.only(left: 10, right: 10),
                   child: Center(
                     child: Text(
-                      "Session 5 : We shall formulate our cyber security policy.",
+                      "Session 4 : Conquering in Cyber.",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Color.fromARGB(152, 131, 46, 184),
@@ -112,19 +116,18 @@ class _FoursessionfiveState extends State<Foursessionfive> {
                 Container(
                   margin: EdgeInsets.only(left: 10,right: 10),
                   
-                  child: Text("Take an A4 paper, make 5 cyber security policy for the class.",
+                  child: Text("Take an A4 paper, complete the table on page no: 68.for first 3 column you can take help from session:2. Submit it to me via whats app. Don't forget to write your full name and roll.",
                   style: TextStyle(color: Colors.grey),
                   ))
-            ]),
+              ])
           ),
         ),
 
-
       ),
-       bottomNavigationBar: GestureDetector(
+      bottomNavigationBar: GestureDetector(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Foursessionsix()));
+              context, MaterialPageRoute(builder: (context) => Foursessionfive()));
         },
         child: Container(
           height: 53,
@@ -150,6 +153,9 @@ class _FoursessionfiveState extends State<Foursessionfive> {
           ),
         ),
       ),
-    );
+      
+      
+      
+      );
   }
 }

@@ -83,7 +83,8 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
                 width: 100,
                 decoration: BoxDecoration(color: Colors.amber[100]),
               ),
-            )
+            ),
+            
           ],
         ),
       ),

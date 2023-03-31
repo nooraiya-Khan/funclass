@@ -1,10 +1,10 @@
-import 'package:demo/classsix.dart';
+import 'package:demo/class_six.dart';
 import 'package:demo/lrn4.dart';
-import 'package:demo/lrnthree.dart';
-import 'package:demo/lrntwo.dart';
+import 'package:demo/lrn_three.dart';
+import 'package:demo/lrn_two.dart';
 import 'package:flutter/material.dart';
 
-import 'class seven.dart';
+import 'class_seven.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -152,13 +152,38 @@ class _HomepageState extends State<Homepage> {
                               ),
                             ),
                           ),
-                        )
+                        ),
+                        SizedBox(height: 250,),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Container(child: Icon(Icons.info_outline,size: 15,color: Colors.grey,),),
+                    Container(
+                      margin: EdgeInsets.only(left: 0,right: 0),
+                      child: Center(
+                        child: Text("App Logo Designer : Masud Hasan Suheb,Class : 7,",
+                        maxLines: 2,
+                        style: TextStyle(color: Colors.grey),
+                        
+                        ),
+                      )),
+                  ],
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: 30),
+                  child: Text("School: Scholarshome South Surma Campus.",textAlign: TextAlign.center,style: TextStyle(color: Colors.grey),))
+              ],
+            ),
+             
                       ],
                     ),
                   ),
+                  
                 ],
               ),
             ),
+            
           ),
         ));
   }

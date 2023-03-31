@@ -1,6 +1,6 @@
-import 'package:demo/lrnone.dart';
-import 'package:demo/lrnthree.dart';
-import 'package:demo/lrntwo.dart';
+import 'package:demo/lrn_one.dart';
+import 'package:demo/lrn_three.dart';
+import 'package:demo/lrn_two.dart';
 import 'package:flutter/material.dart';
 
 const List<String> list = <String>[

@@ -1,4 +1,4 @@
-import 'package:demo/onesessiofive.dart';
+import 'package:demo/one_session_five.dart';
 import 'package:flutter/material.dart';
 
 class Onesessiofour extends StatefulWidget {
@@ -135,12 +135,15 @@ class _OnesessiofourState extends State<Onesessiofour> {
                       fontWeight: FontWeight.w300),
                 ),
               ),
+            
               SizedBox(
                 height: 25,
               ),
               Container(
                   padding: EdgeInsets.all(10),
                   child: Image.asset("assets/tc.png")),
+                    SizedBox(height: 10,),
+              Text("Read Ritu's story from the book."),
               SizedBox(
                 height: 20,
               ),
@@ -185,16 +188,52 @@ class _OnesessiofourState extends State<Onesessiofour> {
                 padding: EdgeInsets.all(7),
                 margin: EdgeInsets.only(left: 5, right: 10),
                 child: Text(
-                  "Proposed terms : In this box you will write the terms and condition for using the intellectual property. Ex : if you do not agree to the terms and  conditions , please do not use this site .",
+                  "Proposed terms : In this box you will write the terms and condition for using the intellectual property.There can be many terms like-",
                   style: TextStyle(
                       color: Color.fromARGB(255, 158, 158, 158),
                       fontSize: 18,
                       fontWeight: FontWeight.w300),
                 ),
+                
               ),
+               Container(
+                 padding: EdgeInsets.all(7),
+                margin: EdgeInsets.only(left: 5, right: 10),
+                 child: Text(
+                    "1.If you do not agree to the terms, please do not use this intellectual property.",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 158, 158, 158),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300),
+                  ),
+               ),
+                 Container(
+                   padding: EdgeInsets.all(7),
+                margin: EdgeInsets.only(left: 5, right: 10),
+                   child: Text(
+                    "2. Do not attempt to modify the property without the permission of the copyright owner.",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 158, 158, 158),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300),
+                                 ),
+                 ),
+                 Container(
+                   padding: EdgeInsets.all(7),
+                margin: EdgeInsets.only(left: 5, right: 10),
+                   child: Text(
+                    "3.You can contact the copyright owner if you want any changes to the intellectual property.",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 158, 158, 158),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300),
+                                 ),
+                 ),
               SizedBox(
                 height: 10,
               ),
+              Center(child: Text("Try to be creative and find some more terms and conditons.")),
+              SizedBox(height: 10,),
               Container(
                 padding: EdgeInsets.all(7),
                 margin: EdgeInsets.only(left: 5, right: 10),
@@ -252,7 +291,7 @@ class _OnesessiofourState extends State<Onesessiofour> {
               Container(
                   margin: EdgeInsets.only(left: 10, right: 10),
                   child: Text(
-                    "Step 2 : Find only three terms for the FUNCLASS app. You can take help of Google for this. You can download several apps to get an idea of ​​the terms and conditions.write it on the book .use pencil",
+                    "Step 2 : Find only three terms for the FUNCLASS app. You can take help of Google for this. Do not use the terms mentioned above.",
                     style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w300,

@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/previewpage.dart';
+import 'package:demo/preview_page.dart';
 class Previewpage extends StatefulWidget {
   const Previewpage({super.key});
 

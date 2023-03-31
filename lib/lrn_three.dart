@@ -1,8 +1,8 @@
-import 'package:demo/threesessionone.dart';
-import 'package:demo/threesessiontwo.dart';
+import 'package:demo/three_session_one.dart';
+import 'package:demo/three_session_two.dart';
 
-import 'package:demo/threesessionthree.dart';
-import 'package:demo/threesessionfour.dart';
+import 'package:demo/three_session_three.dart';
+import 'package:demo/three_session_four.dart';
 
 import 'package:flutter/material.dart';
 

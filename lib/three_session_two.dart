@@ -1,8 +1,8 @@
 import 'dart:ffi';
 
-import 'package:demo/threesessionthree.dart';
+import 'package:demo/three_session_three.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/threesessionone.dart';
+import 'package:demo/three_session_one.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:url_launcher/url_launcher.dart';

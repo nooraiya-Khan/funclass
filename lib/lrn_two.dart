@@ -1,8 +1,8 @@
-import 'package:demo/onesessiofive.dart';
-import 'package:demo/onesessionfour.dart';
-import 'package:demo/onesessionone.dart';
-import 'package:demo/onesessionthree.dart';
-import 'package:demo/onesessiontwo.dart';
+import 'package:demo/one_session_five.dart';
+import 'package:demo/one_session_four.dart';
+import 'package:demo/one_session_one.dart';
+import 'package:demo/one_session_three.dart';
+import 'package:demo/one_session_two.dart';
 import 'package:flutter/material.dart';
 
 class Lrntwo extends StatefulWidget {

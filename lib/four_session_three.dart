@@ -1,17 +1,31 @@
-import 'package:demo/foursessionfive.dart';
+import 'package:demo/four_session_four.dart';
 import 'package:flutter/material.dart';
-class Foursessionfour extends StatefulWidget {
-  const Foursessionfour({super.key});
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+class Foursessionthree extends StatefulWidget {
+  const Foursessionthree({super.key});
 
   @override
-  State<Foursessionfour> createState() => _FoursessionfourState();
+  State<Foursessionthree> createState() => _FoursessionthreeState();
 }
 
-class _FoursessionfourState extends State<Foursessionfour> {
-    Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
+class _FoursessionthreeState extends State<Foursessionthree> {
   @override
+  Tween<double> _scaleTween = Tween<double>(begin: 0, end: 1);
+    final videoURL = "https://youtu.be/8tR9P4QX82I";
+     @override
+  late YoutubePlayerController _controller;
+  void initState() {
+    final videoID = YoutubePlayer.convertUrlToId(videoURL);
+    _controller = YoutubePlayerController(
+        initialVideoId: videoID!,
+        flags: const YoutubePlayerFlags(
+          autoPlay: false,
+        ));
+    super.initState();
+  }
   Widget build(BuildContext context) {
-    return Scaffold(  appBar: AppBar(
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Color.fromARGB(152, 131, 46, 184)),
         title: Center(
@@ -41,8 +55,6 @@ class _FoursessionfourState extends State<Foursessionfour> {
                     ),
                   ),
                 ],
-
-
               ),
               Container(
                 height: 3,
@@ -53,81 +65,79 @@ class _FoursessionfourState extends State<Foursessionfour> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
-        child: TweenAnimationBuilder(
-
-
-          tween: _scaleTween,
+body: SingleChildScrollView(
+  physics: BouncingScrollPhysics(),
+  child: TweenAnimationBuilder(
+        tween: _scaleTween,
           duration: Duration(milliseconds: 600),
           builder: (context, scale, child) {
             return Transform.scale(
               scale: scale,
               child: child,
             );
-          },child: Container(
-            margin: EdgeInsets.only(left: 0,right: 0),
+          },
+          child: Container(
+            margin: EdgeInsets.only(left: 10,right: 10),
             child: Column(
-             
               children: [
-                SizedBox(
+                 SizedBox(
                   height: 10,
                 ),
                 Container(
                   padding: EdgeInsets.all(7),
                   margin: EdgeInsets.only(left: 10, right: 10),
-                  child: Center(
-                    child: Text(
-                      "Session 4 : Conquering in Cyber.",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Color.fromARGB(152, 131, 46, 184),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                    ),
+                  child: Text(
+                    "Session 3 : We will Prevent Cybercrimes Now .",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Color.fromARGB(152, 131, 46, 184),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500),
                   ),
                 ),
-                 SizedBox(
-                  height: 20,
+                SizedBox(
+                height: 15,
+              ),
+              Text(
+                "VIDEO TIME!",
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Color.fromARGB(255, 198, 200, 50),
+                    fontWeight: FontWeight.bold),
+              ),
+                SizedBox(
+                  height: 15,
                 ),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(left: 150, bottom: 30),
-                      child: const Text(
-                        "Fun",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Color.fromARGB(255, 198, 200, 50),
-                            fontWeight: FontWeight.bold),
+                YoutubePlayer(
+                  controller: _controller,
+                  showVideoProgressIndicator: true,
+                  onReady: () => debugPrint('Ready'),
+                  bottomActions: [
+                    CurrentPosition(),
+                    ProgressBar(
+                      isExpanded: true,
+                      colors: const ProgressBarColors(
+                        playedColor: Color.fromARGB(152, 131, 46, 184),
+                        handleColor: Color.fromARGB(255, 158, 158, 158),
                       ),
                     ),
-                    Container(
-                      child: const Text(
-                        "Task",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Color.fromARGB(152, 131, 46, 184),
-                            fontWeight: FontWeight.bold),
-                      ),
-                    )
+                    const PlaybackSpeedButton()
                   ],
                 ),
-                Container(
-                  margin: EdgeInsets.only(left: 10,right: 10),
-                  
-                  child: Text("Take an A4 paper, complete the table on page no: 68.for first 3 column you can take help from session:2. Submit it to me via whats app. Don't forget to write your full name and roll.",
-                  style: TextStyle(color: Colors.grey),
-                  ))
-              ])
-          ),
-        ),
+    
+  ] ),
 
-      ),
-      bottomNavigationBar: GestureDetector(
+),
+
+
+
+    )
+    
+    ),
+    bottomNavigationBar: GestureDetector(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Foursessionfive()));
+              context, MaterialPageRoute(builder: (context) => Foursessionfour()));
         },
         child: Container(
           height: 53,
@@ -138,7 +148,7 @@ class _FoursessionfourState extends State<Foursessionfour> {
               Padding(padding: EdgeInsets.only(left: 0)),
               Center(
                 child: Text(
-                  "Go to session 5 ",
+                  "Go to session 4 ",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
@@ -152,10 +162,6 @@ class _FoursessionfourState extends State<Foursessionfour> {
             ],
           ),
         ),
-      ),
-      
-      
-      
-      );
+      ),);
   }
 }
