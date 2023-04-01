@@ -1,6 +1,7 @@
-import 'package:demo/homepage.dart';
-import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:demo/home/home_page.dart';
+import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -38,7 +39,7 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
   onDoneLoading() async {
     Navigator.pop(context);
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => Homepage()));
+        context, MaterialPageRoute(builder: (context) => HomePage()));
   }
 
   Widget build(BuildContext context) {
@@ -51,11 +52,9 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                
                 Container(
                   //margin: const EdgeInsets.only(left: 80),
                   child: const Text(
@@ -84,7 +83,6 @@ class _SplashState extends State<Splash> with TickerProviderStateMixin {
                 decoration: BoxDecoration(color: Colors.amber[100]),
               ),
             ),
-            
           ],
         ),
       ),
